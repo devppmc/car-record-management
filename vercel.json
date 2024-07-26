@@ -19,6 +19,9 @@
         "src": "/(.*)",
         "dest": "/frontend/$1"
       }
-    ]
+    ],
+    "env": {
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
   }
   
