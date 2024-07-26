@@ -5,7 +5,7 @@ const carRoutes = require('./routes/car');
 const app = express();
 const port = process.env.PORT || 3001;
 
-mongoose.connect('mongodb://localhost:27017/car-management', {
+mongoose.connect('mongodb+srv://caruser00:Anthology8-Pacific7-Crescent6-Justness1-Referee5-Kudos0-Limit0@cluster0.peslqci.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
