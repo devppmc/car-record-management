@@ -2,10 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const carRoutes = require('./routes/car');
+require('dotenv').config();
+
 const app = express();
 const port = process.env.PORT || 3001;
 
-mongoose.connect('mongodb+srv://caruser00:Anthology8-Pacific7-Crescent6-Justness1-Referee5-Kudos0-Limit0@cluster0.peslqci.mongodb.net/', {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
